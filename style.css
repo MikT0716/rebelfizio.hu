@@ -6,8 +6,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* NAVBAR CONTAINER */
@@ -48,6 +46,7 @@
   padding: 10px;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .bottom-navbar ul,
@@ -73,11 +72,64 @@
 
 /* HERO */
 
-.container.hero {
+.hero {
   background: url(src/logo_big.jpeg);
   background-size: cover;
-  height: 80vh;
+  min-height: 80vh;
   min-width: 100%;
 }
 
 /* WHYME */
+.whyme {
+  background-color: aquamarine;
+  min-height: 50vh;
+}
+
+/* ABOUT ME */
+.aboutme {
+  background-color: bisque;
+  min-height: 80vh;
+}
+
+/* SERVICES */
+
+.album .card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+/* REVIEWS */
+
+/* CONTACT */
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list-item {
+  margin-bottom: 15px;
+}
+
+iframe.w-100 {
+  filter: brightness(0.8);
+}
+
+.contact2 {
+  align-items: center;
+  border-radius: 2em;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 128, 0.8);
+  height: 60%;
+  width: 30em;
+  position: absolute;
+  right: 10em;
+  top: 6em;
+}
+
+.contact2:hover {
+  background-color: rgba(255, 255, 128, 1);
+}

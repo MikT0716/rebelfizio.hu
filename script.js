@@ -3,7 +3,7 @@ document.addEventListener("scroll", function () {
   var topNavbar = document.querySelector(".top-navbar");
   var scrolled = window.scrollY;
 
-  if (scrolled > 120) {
+  if (scrolled > 150) {
     bottomNavbar.classList.add("top-navbar");
     bottomNavbar.classList.remove("bottom-navbar");
   } else {
