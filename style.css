@@ -1,0 +1,83 @@
+/* #FFFDFB
+#323232
+#FF3131
+#F4EEE6 
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR CONTAINER */
+
+.container.nav {
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+.container.nav img {
+  margin-top: 1em;
+  height: 70%;
+}
+
+/* NAVBARS */
+
+.bottom-navbar {
+  background-color: #ff3131;
+  bottom: 0;
+  height: 2.4em;
+  left: 5%;
+  margin-bottom: -1em;
+  padding: 10px;
+  position: absolute;
+  width: 90%;
+}
+
+.top-navbar {
+  background-color: #ff3131;
+  height: 2.4em;
+  margin-bottom: -1em;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.bottom-navbar ul,
+.top-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.bottom-navbar li,
+.top-navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.bottom-navbar a,
+.top-navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* HERO */
+
+.container.hero {
+  background: url(src/logo_big.jpeg);
+  background-size: cover;
+  height: 80vh;
+  min-width: 100%;
+}
+
+/* WHYME */
