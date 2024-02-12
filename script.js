@@ -3,11 +3,16 @@ document.addEventListener("scroll", function () {
   var topNavbar = document.querySelector(".top-navbar");
   var scrolled = window.scrollY;
 
-  if (scrolled > 150) {
+  if (scrolled > 120) {
     bottomNavbar.classList.add("top-navbar");
     bottomNavbar.classList.remove("bottom-navbar");
   } else {
     topNavbar.classList.add("bottom-navbar");
     topNavbar.classList.remove("top-navbar");
   }
+});
+
+document.querySelector(".hamburger").addEventListener("click", function () {
+  var nav = document.querySelector(".nav ul");
+  nav.classList.toggle("active");
 });
