@@ -29,14 +29,24 @@
       <!-- NAVBAR -->
 
       <nav class="nav bottom-navbar">
-        <ul>
-          <li><a href="#">Rólam</a></li>
-          <li><a href="#">Szolgáltatásaim</a></li>
-          <li><a href="#">Masszázs</a></li>
-          <li><a href="#">Ajánló</a></li>
-          <li><a href="#">Infó</a></li>
-          <li><a href="#">Infó</a></li>
-        </ul>
+        <div class="nav_container w-100">
+          <ul class="d-flex">
+            <li><a href="#">Rólam</a></li>
+            <li><a href="#">Szolgáltatásaim</a></li>
+            <li><a href="#">Masszázs</a></li>
+          </ul>
+          <ul class="d-flex">
+            <li><a href="#">Ajánló</a></li>
+            <li><a href="#">Infó</a></li>
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
         <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
         <div class="hamburger">
           <div class="bar"></div>
@@ -49,54 +59,59 @@
     <!-- HERO -->
 
     <div class="hero container-fluid position-relative">
-      <div class="hero-text col-lg-6 position-absolute">
-        <h1 class="hero-title display-5 fw-bold text-body-emphasis lh-1 mb-3">
-          Responsive left-aligned hero with image
-        </h1>
+      <div class="hero-text w-50 d-flex flex-column">
+        <h1 class="hero-title mb-3">Ide kell valami szöveg?</h1>
         <p class="hero-paragraph">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world’s most popular front-end open source toolkit,
-          featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.
+          Nemtudommi, ez az alszöveg, kisebb betűvel stb.
         </p>
       </div>
     </div>
 
-    <!-- WHYME -->
+    <!-- SPECIALITIES -->
 
-    <div class="container-fluid whyme" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Icon grid</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    <div class="container-fluid specialities" id="icon-grid">
+      <h2 class="pb-2 mb-2 border-bottom w-50 text-center">Specialitásaim</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 p-3">
         <div class="col d-flex align-items-start">
           <div>
-            <i class="bi bi-0-circle-fill"></i>
-
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <i class="bi bi-0-circle-fill h1"></i>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Komplexitás</h3>
+            <p>
+              Teljeskörű, mindenre kiterjedő állapotfelméréssel kezdünk minden
+              esetben, hiszen a test egy jól szervezett egység, nem érhetünk el
+              hosszú távú javulást, ha kiragadjuk a részleteket.
+            </p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <div>
-            <i class="bi bi-0-circle-fill"></i>
-
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <i class="bi bi-search h1"></i>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+              Egyénre szabott kezelés
+            </h3>
+            <p>
+              Minden test egyedi, más fizikai hatások érték, más traumákon esett
+              át, más céljai vannak, ezért nem lehet ugyanazt a panaszt ugyanúgy
+              kezelni mindenkinél. Minden kezelést teljesen a páciensek
+              igényeihez és állapotához igazítjuk.
+            </p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <div>
-            <i class="bi bi-0-circle-fill"></i>
-
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <i class="bi bi-0-circle-fill h1"></i>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Szakértelem</h3>
+            <p>
+              A folyamatos szakmai továbbképzéseken és kongresszusokon való
+              részvétel elengedhetetlen a megfeleő minőségű ellátáshoz.
+            </p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
           <div>
-            <i class="bi bi-0-circle-fill"></i>
-
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            <i class="bi bi-chat-heart h1"></i>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Empátia</h3>
+            <p>A mai felgyorsult világban sajnos nem jut elég idő egymásra.</p>
           </div>
         </div>
       </div>
@@ -105,13 +120,12 @@
     <!-- ABOUT ME -->
 
     <div class="container-fluid aboutme">
-      <div class="row row-cols-1 row-cols-sm-2">
-        <div class="col">első oszlop</div>
-        <div class="col">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            második oszlop
-          </div>
-        </div>
+      <div class="">
+        <p>
+          Munkám során nagy hangsúlyt fektetek az edukációra, hiszen csak akkor
+          tudunk aktívan részt venni a saját gyógyulásunkban, ha értjük, hogy
+          mit miért csinálunk.
+        </p>
       </div>
     </div>
 

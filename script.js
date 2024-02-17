@@ -13,6 +13,13 @@ document.addEventListener("scroll", function () {
 });
 
 document.querySelector(".hamburger").addEventListener("click", function () {
-  var nav = document.querySelector(".nav ul");
+  var nav = document.querySelector(".nav_container");
   nav.classList.toggle("active");
+
+  // Toggle animation class for each bar
+  var hamburgerBars = document.querySelectorAll(".bar");
+
+  hamburgerBars.forEach((bar, index) => {
+    bar.classList.toggle(`animate${index + 1}`);
+  });
 });
