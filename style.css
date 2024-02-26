@@ -305,4 +305,18 @@
 
 /* REVIEWS */
 
+#reviewCarousel {
+  background-color: antiquewhite;
+  height: 18em;
+}
+
+.carousel-item {
+  padding: 2em 10em;
+}
+
+.carousel-item .container {
+  display: flex;
+  justify-content: center;
+}
+
 /* CONTACT */
