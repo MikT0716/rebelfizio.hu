@@ -296,6 +296,10 @@
 
 /* SERVICES */
 
+.album {
+  background-color: var(--brown);
+}
+
 .album .card:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -306,17 +310,40 @@
 /* REVIEWS */
 
 #reviewCarousel {
-  background-color: antiquewhite;
-  height: 18em;
+  background-color: var(--white);
+  min-height: 18em;
 }
 
-.carousel-item {
-  padding: 2em 10em;
+.carousel-inner {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .carousel-item .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+
 /* CONTACT */
+
+.contact .col {
+  background-color: var(--brown);
+}
