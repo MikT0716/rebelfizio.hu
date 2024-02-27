@@ -202,8 +202,13 @@
   color: var(--red);
   left: 2em;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
+  top: 50%;
+}
+
+.hero-title {
+  font-size: 1.3rem;
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -292,6 +297,7 @@
 @media (max-width: 768px) {
   .aboutme {
     background-image: url(src/aboutme_sm.jpg);
+    background-position: center;
   }
 }
 
@@ -366,4 +372,19 @@
 
 .contact .col {
   background-color: var(--brown);
+}
+
+.contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  margin: 1em;
+}
+
+.contact p {
+  margin: 0;
+  padding: 1em;
 }
