@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Rebel Fizio</title>
+    <link rel="icon" type="image/x-icon" href="src/logo_sm_white.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,7 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/dividers.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
 
   <body>
@@ -28,48 +30,172 @@
 
       <!-- NAVBAR -->
 
-      <nav class="nav bottom-navbar">
+      <!-- <nav class="nav navbar bottom-navbar">
         <div class="nav_container w-100">
-          <ul class="d-flex">
-            <li><a href="#">Rólam</a></li>
-            <li><a href="#">Szolgáltatásaim</a></li>
-            <li><a href="#">Masszázs</a></li>
-          </ul>
-          <ul class="d-flex">
-            <li><a href="#">Ajánló</a></li>
-            <li><a href="#">Infó</a></li>
-            <li>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
+          <div class="d-flex">
+            <a href="#">Rólam</a>
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Szolgáltatásaim
+              </a>
 
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Masszázs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Normál</a></li>
+                <li><a class="dropdown-item" href="#">Babóca</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <a href="#">Ajánló</a>
+            <a href="#">Infó</a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
         <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
         <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-md bottom-navbar">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Rólam</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Szolgáltatásaim
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Masszázs
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Normál</a></li>
+                    <li><a class="dropdown-item" href="#">Babóca</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
+            <div class="container">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ajánló</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Infó
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Info 1</a></li>
+                    <li><a class="dropdown-item" href="#">Info 2</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <!-- HERO -->
 
-    <div class="hero container-fluid position-relative">
+    <section
+      class="hero container-fluid position-relative shapedividers_com-9402"
+    >
       <div class="hero-text d-flex flex-column">
         <h1 class="hero-title mb-3">Ide kell valami szöveg?</h1>
         <p class="hero-paragraph">
           Nemtudommi, ez az alszöveg, kisebb betűvel stb.
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- SPECIALITIES -->
 
-    <div class="container-fluid specialities" id="icon-grid">
+    <section class="container-fluid specialities py-4" id="icon-grid">
       <h2 class="pb-2 mb-2 border-bottom w-50 text-center">Specialitásaim</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 p-3">
         <div class="col d-flex align-items-start">
@@ -115,11 +241,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ABOUT ME -->
 
-    <div class="container-fluid aboutme">
+    <section class="container-fluid aboutme shapedividers_com-99">
       <div class="">
         <p class="hero-paragraph">
           Munkám során nagy hangsúlyt fektetek az edukációra, hiszen csak akkor
@@ -127,15 +253,15 @@
           mit miért csinálunk.
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- SERVICES -->
 
-    <div class="album">
-      <h2 class="py-4 mb-2 mx-auto border-bottom w-50 text-center">
+    <section class="album">
+      <h2 class="pt-4 mb-2 mx-auto border-bottom w-50 text-center">
         Miben segíthetek?
       </h2>
-      <div class="container py-4">
+      <div class="container pt-4">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
           <div class="col d-flex justify-content-center">
             <div class="card">
@@ -236,12 +362,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- REVIEWS -->
 
-    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-      <h2 class="py-3 mb-2 mx-auto border-bottom w-50 text-center">
+    <section
+      id="reviewCarousel"
+      class="carousel slide py-3"
+      data-bs-ride="carousel"
+    >
+      <h2 class="py-2 mb-4 mx-auto border-bottom w-50 text-center">
         Vélemények
       </h2>
       <div class="carousel-indicators">
@@ -338,11 +468,11 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </section>
 
     <!-- CONTACT -->
 
-    <div class="contact container-fluid">
+    <footer class="contact container-fluid">
       <div class="row row-cols-1 row-cols-lg-2">
         <div class="col p-0">
           <iframe
@@ -377,9 +507,7 @@
           </ul>
         </div>
       </div>
-    </div>
-
-    <footer>RebelFizio 2024</footer>
+    </footer>
 
     <!-- SCRIPTS -->
 
