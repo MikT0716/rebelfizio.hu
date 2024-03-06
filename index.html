@@ -24,157 +24,103 @@
     <header>
       <!-- PRE-NAV -->
 
-      <div class="pre_nav container-fluid">
+      <div class="pre-nav container-fluid">
         <img src="src/logo_lg.png" alt="" />
       </div>
 
       <!-- NAVBAR -->
 
-      <!-- <nav class="nav navbar bottom-navbar">
-        <div class="nav_container w-100">
-          <div class="d-flex">
-            <a href="#">Rólam</a>
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Szolgáltatásaim
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Masszázs
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Normál</a></li>
-                <li><a class="dropdown-item" href="#">Babóca</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="d-flex">
-            <a href="#">Ajánló</a>
-            <a href="#">Infó</a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-        <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </nav> -->
-
       <nav class="navbar navbar-expand-md bottom-navbar">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container">
-              <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly"
-              >
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Rólam</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Szolgáltatásaim
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Masszázs
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Normál</a></li>
-                    <li><a class="dropdown-item" href="#">Babóca</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
-            <div class="container">
-              <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly"
-              >
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ajánló</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Infó
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Info 1</a></li>
-                    <li><a class="dropdown-item" href="#">Info 2</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center d-flex justify-content-around"
+          id="navbarSupportedContent"
+        >
+          <div class="container p-0 m-0 navbar__left">
+            <ul
+              class="navbar-nav me-auto d-flex align-items-center navbar__left-ul"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rólam</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Szolgáltatásaim
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Masszázs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Normál</a></li>
+                  <li><a class="dropdown-item" href="#">Babóca</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="logo"><img src="src/logo_sm.png" alt="" /></a>
+          <div class="container p-0 m-0 navbar__right">
+            <ul
+              class="navbar-nav me-auto d-flex align-items-center navbar__right-ul"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ajánló</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Infó
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Info 1</a></li>
+                  <li><a class="dropdown-item" href="#">Info 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -368,7 +314,7 @@
 
     <section
       id="reviewCarousel"
-      class="carousel slide py-3"
+      class="carousel carousel-dark slide py-3"
       data-bs-ride="carousel"
     >
       <h2 class="py-2 mb-4 mx-auto border-bottom w-50 text-center">

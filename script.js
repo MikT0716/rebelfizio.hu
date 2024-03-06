@@ -11,15 +11,3 @@ document.addEventListener("scroll", function () {
     topNavbar.classList.remove("top-navbar");
   }
 });
-
-document.querySelector(".hamburger").addEventListener("click", function () {
-  var nav = document.querySelector(".nav_container");
-  nav.classList.toggle("active");
-
-  // Toggle animation class for each bar
-  var hamburgerBars = document.querySelectorAll(".bar");
-
-  hamburgerBars.forEach((bar, index) => {
-    bar.classList.toggle(`animate${index + 1}`);
-  });
-});
