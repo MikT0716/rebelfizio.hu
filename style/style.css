@@ -124,7 +124,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 0;
   padding-bottom: 50%;
   width: 100%;
   -webkit-background-size: cover;
@@ -212,28 +211,12 @@
 
 /* ABOUT ME */
 .aboutme {
-  background-image: url(../src/aboutme_xl_mod.jpg);
+  background-image: url(../src/aboutme_xxl_mod.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
-}
-
-@media (max-width: 1200px) {
-  .aboutme {
-    background-image: url(../src/aboutme_lg.jpg);
-  }
-}
-
-@media (max-width: 992px) {
-  .aboutme {
-    background-image: url(../src/aboutme_md.jpg);
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutme {
-    background-image: url(../src/aboutme_sm.jpg);
-    background-position: center;
-  }
+  height: 50vh;
+  padding-bottom: 50%;
 }
 
 /* SERVICES */
