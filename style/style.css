@@ -126,8 +126,12 @@
     justify-content: center;
   }
 
+  .nav-item.dropdown {
+    width: 100%;
+  }
+
   .dropdown-menu {
-    background-color: var(--lightred08);
+    background-color: rgb(255, 91, 91);
     text-align: center;
   }
 
