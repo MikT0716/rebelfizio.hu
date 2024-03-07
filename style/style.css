@@ -2,7 +2,8 @@
   --white: rgb(255, 253, 251);
   --brown: rgb(244, 238, 230);
   --red: rgb(255, 49, 49);
-  --lightred: rgba(255, 49, 49, 0.6);
+  --lightred08: rgba(255, 49, 49, 0.8);
+  --lightred06: rgba(255, 49, 49, 0.6);
   --black: rgb(50, 50, 50);
 }
 
@@ -38,8 +39,8 @@
 .bottom-navbar {
   background-color: var(--red);
   border-radius: 1.2em;
-  height: 3em;
   left: 5%;
+  line-height: 1.5em;
   position: absolute;
   top: 8.4em;
   width: 90%;
@@ -48,10 +49,9 @@
 
 .top-navbar {
   backdrop-filter: blur(0.4em);
-  background-color: var(--red);
-  height: 3.5em;
+  background-color: var(--lightred08);
   left: 0;
-  opacity: 0.8;
+  line-height: 1.5em;
   position: fixed;
   top: 0;
   width: 100%;
@@ -80,6 +80,7 @@
   width: 100%;
 }
 
+/* desktop */
 @media (min-width: 993px) {
   .navbar-collapse {
     display: flex;
@@ -104,7 +105,7 @@
     justify-content: space-evenly;
   }
 }
-
+/* tablet */
 @media (max-width: 992px) {
   .navbar .logo {
     display: none;
@@ -113,6 +114,25 @@
   .navbar__left-ul,
   .navbar__right-ul {
     justify-content: space-around;
+    font-size: 0.85rem;
+  }
+}
+/* phone (dropdown) */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    background-color: var(--lightred08);
+    text-align: center;
+  }
+
+  .navbar__left-ul,
+  .navbar__right-ul {
     font-size: 0.85rem;
   }
 }
@@ -209,6 +229,16 @@
   color: var(--red);
 }
 
+.specialities img {
+  width: 80px;
+  height: 80px;
+}
+
+.justy {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* ABOUT ME */
 .aboutme {
   background-image: url(../src/aboutme_xxl_mod.jpg);
@@ -238,7 +268,7 @@
 }
 
 .album .card:hover {
-  background-color: var(--lightred);
+  background-color: var(--lightred06);
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s ease;
