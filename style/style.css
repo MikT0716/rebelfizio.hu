@@ -39,6 +39,7 @@
 .bottom-navbar {
   background-color: var(--red);
   border-radius: 1.2em;
+  height: 3em;
   left: 5%;
   line-height: 1.5em;
   position: absolute;
@@ -50,6 +51,7 @@
 .top-navbar {
   backdrop-filter: blur(0.4em);
   background-color: var(--lightred08);
+  height: 3em;
   left: 0;
   line-height: 1.5em;
   position: fixed;
@@ -105,6 +107,7 @@
     justify-content: space-evenly;
   }
 }
+
 /* tablet */
 @media (max-width: 992px) {
   .navbar .logo {
@@ -121,6 +124,7 @@
 @media (max-width: 768px) {
   .navbar-collapse {
     background-color: var(--red);
+    border-radius: 0 0 1.2em 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,6 +142,15 @@
   .navbar__left-ul,
   .navbar__right-ul {
     font-size: 0.85rem;
+  }
+
+  li.nav-item {
+    width: 100% !important;
+  }
+
+  li.nav-item:hover {
+    cursor: pointer;
+    background-color: rgb(255, 91, 91);
   }
 }
 

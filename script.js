@@ -1,5 +1,6 @@
+var bottomNavbar = document.querySelector(".bottom-navbar");
+
 document.addEventListener("scroll", function () {
-  var bottomNavbar = document.querySelector(".bottom-navbar");
   var topNavbar = document.querySelector(".top-navbar");
   var scrolled = window.scrollY;
 
@@ -10,4 +11,23 @@ document.addEventListener("scroll", function () {
     topNavbar.classList.add("bottom-navbar");
     topNavbar.classList.remove("top-navbar");
   }
+});
+
+const navbarToggler = document.querySelector(".navbar-toggler");
+
+function bottomBorderFunction() {
+  if (bottomNavbar.classList.contains("rounded-bottom-0")) {
+    setTimeout(() => {
+      bottomNavbar.classList.remove("rounded-bottom-0");
+    }, 330);
+  } else {
+    bottomNavbar.classList.add("rounded-bottom-0");
+  }
+}
+
+navbarToggler.addEventListener("click", function () {
+  navbarToggler.disabled = true;
+  setTimeout(function () {
+    navbarToggler.disabled = false;
+  }, 500);
 });
