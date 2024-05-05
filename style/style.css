@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--white);
+  overflow-x: hidden;
 }
 
 .border-bottom {
@@ -86,6 +87,47 @@ body {
   width: 100%;
 }
 
+.nav-item.dropdown li {
+  width: 100%;
+}
+
+.navbar-nav li {
+  line-height: 2.35em;
+}
+
+.navbar-nav li:hover {
+  background-color: var(--black);
+}
+
+.dropdown-menu.show {
+  background-color: var(--red);
+  padding: 0;
+  margin-top: -0.3em;
+}
+
+nav .dropdown-item {
+  color: aliceblue;
+}
+
+nav a.dropdown-item:hover {
+  background-color: var(--brown);
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: aliceblue;
+}
+
+.navbar-nav li {
+  width: 33%;
+}
+
 /* desktop */
 @media (min-width: 993px) {
   .navbar-collapse {
@@ -127,7 +169,7 @@ body {
 /* phone (dropdown) */
 @media (max-width: 768px) {
   .navbar-collapse {
-    background-color: var(--red);
+    background-color: var(--black);
     border-radius: 0 0 1.2em 1.2em;
     display: flex;
     flex-direction: column;
@@ -268,6 +310,13 @@ body {
   background-size: cover;
   height: 50vh;
   padding-bottom: 50%;
+}
+
+.aboutme .hero-paragraph {
+  background-color: aqua;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
 /* SERVICES */
