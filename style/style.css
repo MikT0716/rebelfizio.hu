@@ -186,6 +186,16 @@ nav a.dropdown-item:hover {
   .navbar-nav li {
     line-height: 2.35em;
   }
+
+  .bottom-navbar .navbar__left li:nth-child(1):hover {
+    border-top-left-radius: 1.2em;
+    border-bottom-left-radius: 1.2em;
+  }
+
+  .bottom-navbar .navbar__right li:nth-child(4):hover {
+    border-top-right-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
+  }
 }
 
 /* phone (dropdown) */

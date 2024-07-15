@@ -12,7 +12,6 @@
 }
 
 .img__varandossag_2 {
-  height: 100%;
 }
 
 p {
@@ -21,4 +20,56 @@ p {
 
 .row i {
   color: var(--red);
+}
+
+@media (min-width: 769px) {
+  .img__varandossag_3 {
+    position: absolute;
+    max-width: 50%;
+    left: 3em;
+    z-index: 10;
+  }
+
+  .img__varandossag_4 {
+    position: absolute;
+    max-width: 50%;
+    top: 2em;
+    right: 3em;
+  }
+
+  .wrapper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 993px) {
+  .img__varandossag_3 {
+    position: absolute;
+    max-width: 50%;
+    left: 3em;
+    z-index: 10;
+  }
+
+  .img__varandossag_4 {
+    position: absolute;
+    max-width: 50%;
+    top: 2em;
+    right: 3em;
+  }
+
+  .wrapper {
+    height: 380px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    height: 500px;
+  }
 }
