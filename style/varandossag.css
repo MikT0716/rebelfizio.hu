@@ -11,9 +11,6 @@
   background-color: var(--brown);
 }
 
-.img__varandossag_2 {
-}
-
 p {
   text-align: justify;
 }
@@ -23,14 +20,14 @@ p {
 }
 
 @media (min-width: 769px) {
-  .img__varandossag_3 {
+  .img_varandossag_left {
     position: absolute;
     max-width: 50%;
     left: 3em;
     z-index: 10;
   }
 
-  .img__varandossag_4 {
+  .img_varandossag_right {
     position: absolute;
     max-width: 50%;
     top: 2em;
@@ -43,14 +40,14 @@ p {
 }
 
 @media (min-width: 993px) {
-  .img__varandossag_3 {
+  .img_varandossag_3 {
     position: absolute;
     max-width: 50%;
     left: 3em;
     z-index: 10;
   }
 
-  .img__varandossag_4 {
+  .img_varandossag_4 {
     position: absolute;
     max-width: 50%;
     top: 2em;
