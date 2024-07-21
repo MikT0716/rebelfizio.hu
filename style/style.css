@@ -424,7 +424,7 @@ nav a.dropdown-item:hover {
 
 /* CONTACT */
 
-.contact .col {
+.contact .col-md-6 {
   background-color: var(--brown);
 }
 
