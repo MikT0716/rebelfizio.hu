@@ -50,6 +50,10 @@ p {
   color: var(--red);
 }
 
+.h-15 {
+  height: 15%;
+}
+
 /* PRE-NAV */
 
 .pre-nav {
@@ -497,6 +501,7 @@ nav a.dropdown-item:hover {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 100;
 }
 
 .floating-button:hover {
@@ -527,4 +532,82 @@ nav a.dropdown-item:hover {
   50% {
     transform: scale(1.1);
   }
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -3em;
+  visibility: hidden;
+}
+
+/* ÁRLISTA */
+
+.price-list {
+  width: 100%;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+}
+
+.price-row:hover {
+  background-color: var(--lightred06);
+}
+
+.service-name {
+  font-weight: bold;
+}
+
+.service-price {
+  font-weight: bold;
+}
+
+/* FAQ */
+
+.faq-container {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.faq-question:hover {
+  background-color: #e2e2e2;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.faq-answer p {
+  margin: 15px 0;
 }

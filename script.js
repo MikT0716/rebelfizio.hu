@@ -32,6 +32,8 @@ navbarToggler.addEventListener("click", function () {
   }, 500);
 });
 
+//PULSE BUTTON
+
 const button = document.querySelector(".floating-button");
 
 function pulseEffect() {
@@ -48,3 +50,26 @@ function pulseEffect() {
 
 // Start the pulse effect
 pulseEffect();
+
+// FAQ
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+    faqItems.forEach((i) => {
+      if (i !== item) {
+        i.querySelector(".faq-answer").style.maxHeight = null;
+      }
+    });
+
+    const answer = item.querySelector(".faq-answer");
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
