@@ -41,6 +41,11 @@ li {
   font-family: "Open-sans", sans-serif;
 }
 
+p {
+  font-size: calc(15px + 0.390625vw);
+  text-align: justify;
+}
+
 .row i {
   color: var(--red);
 }
