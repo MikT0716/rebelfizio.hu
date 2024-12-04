@@ -31,3 +31,20 @@ navbarToggler.addEventListener("click", function () {
     navbarToggler.disabled = false;
   }, 500);
 });
+
+const button = document.querySelector(".floating-button");
+
+function pulseEffect() {
+  button.classList.add("pulse");
+
+  // Keep the pulse effect for 2 seconds
+  setTimeout(() => {
+    button.classList.remove("pulse");
+
+    // Pause for 5 seconds before reapplying the effect
+    setTimeout(pulseEffect, 5000);
+  }, 2200);
+}
+
+// Start the pulse effect
+pulseEffect();
