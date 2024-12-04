@@ -15,10 +15,6 @@ p {
   text-align: justify;
 }
 
-.row i {
-  color: var(--red);
-}
-
 @media (min-width: 769px) {
   .img_varandossag_left {
     position: absolute;
