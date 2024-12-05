@@ -283,7 +283,7 @@ nav a.dropdown-item:hover {
 /* HERO */
 
 .hero {
-  background-image: url(../src/hero.jpg);
+  background-image: url(../src/hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@ nav a.dropdown-item:hover {
 
 /* ABOUT ME */
 .aboutme {
-  background-image: url(../src/aboutme_xxl_mod.jpg);
+  background-image: url(../src/aboutme_xxl_mod.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
