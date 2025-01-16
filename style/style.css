@@ -41,9 +41,9 @@ li {
   font-family: "Open-sans", sans-serif;
 }
 
-p {
-  font-size: calc(15px + 0.390625vw);
-  text-align: justify;
+p,
+ul {
+  font-size: calc(14px + 0.390625vw);
 }
 
 .row i {
@@ -52,6 +52,18 @@ p {
 
 .h-15 {
   height: 15%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.divider {
+  height: 5vh;
 }
 
 /* PRE-NAV */
@@ -157,6 +169,10 @@ nav a.dropdown-item:hover {
   width: 33%;
 }
 
+.navbar ul {
+  font-size: 16px !important;
+}
+
 /* desktop */
 @media (min-width: 993px) {
   .home__button {
@@ -230,7 +246,7 @@ nav a.dropdown-item:hover {
     border-bottom-left-radius: 1.2em;
   }
 
-  .bottom-navbar .navbar__right li:nth-child(4):hover {
+  .bottom-navbar .navbar__right li:nth-child(3):hover {
     border-top-right-radius: 1.2em;
     border-bottom-right-radius: 1.2em;
   }
@@ -371,7 +387,7 @@ nav a.dropdown-item:hover {
   min-height: 40vh;
 }
 
-.specialities h2 {
+.specialities h1 {
   left: 25%;
   padding-top: 0.5em;
   position: relative;
@@ -438,6 +454,10 @@ nav a.dropdown-item:hover {
   -webkit-box-shadow: 14px 21px 48px -24px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 14px 21px 48px -24px rgba(0, 0, 0, 0.75);
   box-shadow: 14px 21px 48px -24px rgba(0, 0, 0, 0.75);
+}
+
+.album p {
+  font-size: calc(11px + 0.390625vw);
 }
 
 /* REVIEWS */

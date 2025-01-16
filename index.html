@@ -194,9 +194,9 @@
       <!-- SPECIALITIES -->
 
       <section class="specialities py-4">
-        <h2 class="pb-2 mb-2 border-bottom w-50 text-center">Specialitásaim</h2>
+        <h1 class="pb-2 mb-2 border-bottom w-50 text-center">Specialitásaim</h1>
         <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 p-3 text-center p-0 mx-0"
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 p-3 text-center g-5 p-0 mx-0"
         >
           <div class="col">
             <img class="mb-1" src="src/icon_komplexitas.png" alt="" />
@@ -228,7 +228,9 @@
           <div class="col">
             <img class="mb-1" src="src/icon_empatia.png" alt="" />
             <h3 class="h-15">Empátia</h3>
-            <p>A mai felgyorsult világban sajnos nem jut elég idő egymásra.</p>
+            <p class="justy">
+              A mai felgyorsult világban sajnos nem jut elég idő egymásra.
+            </p>
           </div>
         </div>
       </section>
@@ -253,7 +255,7 @@
         <h2 class="pt-4 mb-2 mx-auto border-bottom w-50 text-center">
           Miben segíthetek?
         </h2>
-        <div class="container pt-4">
+        <div class="container-xxl pt-4">
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center"
           >
@@ -262,7 +264,9 @@
                 <div class="card">
                   <img src="src/services_varandossag.webp" alt="" />
                   <div class="m-2">
-                    <h6>Várandósság alatti terápiák és szülésfelkészítés</h6>
+                    <h6 class="fw-bold">
+                      Várandósság alatti terápiák és szülésfelkészítés
+                    </h6>
                     <p class="mt-3">
                       Tudatos felkészülés, kismamatorna, manuálterápia,
                       kineziotape, páros felkészítés.
@@ -276,7 +280,7 @@
                 <div class="card">
                   <img src="src/services_szules.webp" alt="" />
                   <div class="m-2">
-                    <h6>Szülés utáni rehabilitáció</h6>
+                    <h6 class="fw-bold">Szülés utáni rehabilitáció</h6>
                     <p class="mt-3">
                       Tartásjavítás, hegkezelés, gátizomregeneráció,
                       manuálterápia, viscerális kezelés.
@@ -290,7 +294,7 @@
                 <div class="card">
                   <img src="src/services_gat.webp" alt="" />
                   <div class="m-2">
-                    <h6>Gátizom problémák</h6>
+                    <h6 class="fw-bold">Gátizom problémák</h6>
                     <p class="mt-3">
                       Inkontinencia, süllyedéses panaszok, szexuális együttlét
                       közbeni fájdalom kezelése.
@@ -304,7 +308,7 @@
                 <div class="card">
                   <img src="src/services_visceral.webp" alt="" />
                   <div class="m-2">
-                    <h6>Viscerális terápia</h6>
+                    <h6 class="fw-bold">Viscerális terápia</h6>
                     <p class="mt-3">
                       Belső szervi panaszok, puffadások, emésztési zavarok,
                       menstruációs zavarok, fájdalom, PCOS, endometriózis...stb.
@@ -318,7 +322,7 @@
                 <div class="card">
                   <img src="src/services_manual.webp" alt="" />
                   <div class="m-2">
-                    <h6>Manuálterápia</h6>
+                    <h6 class="fw-bold">Manuálterápia</h6>
                     <p class="mt-3">
                       Akut vagy krónikus gerinc- és ízületi panaszok passzív
                       kiegészítő kezelése.
@@ -332,7 +336,9 @@
                 <div class="card">
                   <img src="src/services_gyogytorna.webp" alt="" />
                   <div class="m-2">
-                    <h6>Gyógytorna (gerinc- és ízületi panaszok)</h6>
+                    <h6 class="fw-bold">
+                      Gyógytorna (gerinc- és ízületi panaszok)
+                    </h6>
                     <p class="mt-3">
                       Akut vagy krónikus gerinc- és ízületi panaszok kezelése
                       aktív terápiával.
@@ -346,7 +352,7 @@
                 <div class="card">
                   <img src="src/services_allkapocs.webp" alt="" />
                   <div class="m-2">
-                    <h6>Állkapocsízületi terápia</h6>
+                    <h6 class="fw-bold">Állkapocsízületi terápia</h6>
                     <p class="mt-3">
                       Állkapocsízületi fájdalom, kattogás, fülzúgás, fejfájás,
                       fogcsikorgatás kezelése.
@@ -360,11 +366,9 @@
                 <div class="card">
                   <img src="src/services_heg.webp" alt="" />
                   <div class="m-2">
-                    <h6>Hegkezelés</h6>
+                    <h6 class="fw-bold">Hegkezelés</h6>
                     <p class="mt-3">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Műtéti vagy sérülésből adódó hegek manuális kezelése.
                     </p>
                   </div>
                 </div>
@@ -380,6 +384,7 @@
         id="reviewCarousel"
         class="carousel carousel-dark slide py-3"
         data-bs-ride="carousel"
+        data-bs-interval="10000"
       >
         <h2 class="py-2 mb-4 mx-auto border-bottom w-50 text-center">
           Vélemények
@@ -394,10 +399,18 @@
               <div class="review__text d-flex justify-content-center">
                 <p class="text-center pt-2 pb-4">
                   <i class="fa-solid fa-quote-left fa-3x me-4"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ipsam, deleniti illum! Soluta vitae nostrum sit suscipit,
-                  velit quas debitis nihil natus voluptas dolor, explicabo sed
-                  doloribus consequatur delectus voluptates vero.
+                  Igen kevés jó segítővel lehet találkozni, éppen ezért olyan
+                  értékes, amikor rátalálunk egyre. Rebeka személyisége lágy,
+                  kedves és elfogadó, ugyanakkor kezei és fogásai határozottak,
+                  magabiztosak és szakszerűek. Szakmai tudása széleskörű,
+                  holisztikus, fontos számára a folyamatos fejlődés és a
+                  páciensei felé az edukáció. Bátorít, hogy rendkívül érzékeny
+                  témákban is szabad kérdezni tőle, személyiségéből adódóan
+                  valóban természetes figyelemmel és érdeklődéssel fogadja a
+                  hallottakat, s igyekszek együttgondolkodni, megoldásokat
+                  ajánlani, s pont ezzel a hitelességével tud biztonságos,
+                  bizalmi kapcsolatot kialakítani. Igazán gyógyítani és
+                  gyógyulni pedig így lehet és így érdemes.
                 </p>
               </div>
             </div>
@@ -405,14 +418,26 @@
           <div class="carousel-item">
             <div class="container">
               <div class="text-center">
-                <h4>Janka</h4>
+                <h4>Zsuzsanna</h4>
               </div>
               <div class="review__text d-flex justify-content-center">
                 <p class="text-center pt-2 pb-4">
                   <i class="fa-solid fa-quote-left fa-3x me-4"></i>
-
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ipsam, deleniti illum! Soluta..
+                  Rebeka a legjobb szakember, akivel valaha találkoztam! Évek
+                  óta húzódó és az orvosi kezelések ellenére is tartósan
+                  fennálló fizikai fájdalmaimra, a negatív eredményeim ellenére
+                  is jelen lévő nőgyógyászati jellegű problémáimra rengeteg
+                  gyógyszert bevettem már és számos módon kerestem megoldást.
+                  Hosszas kínlódás után, ajánlás útján találtam Rebekára, aki
+                  már az első kezelés alkalmával fantasztikus eredményeket ért
+                  el velem kapcsolatban. Gyakorlatilag azonnal el tudtam hagyni
+                  az összes gyógyszert és krémet is, amelyeket a gondjaimra
+                  kellett használni, gyulladáscsökkentés és fájdalomcsillapítás
+                  gyanánt. Egy hónap alatt újra a régi lettem, mintha
+                  kicseréltek volna, visszakaptam az életemet. Azóta is
+                  rendszeresen járok kezelésre, már el sem tudnám képzelni
+                  enélkül a rutin nélkül a hétköznapokat. Nagy szeretettel
+                  ajánlom Rebekát!
                 </p>
               </div>
             </div>
@@ -420,20 +445,18 @@
           <div class="carousel-item">
             <div class="container">
               <div class="text-center">
-                <h4>Zsófi</h4>
+                <h3>Andrea</h3>
               </div>
               <div class="review__text d-flex">
                 <p class="text-center pt-2 pb-4">
                   <i class="fa-solid fa-quote-left fa-3x me-4"></i>
-
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ipsam, deleniti illum! Soluta vitae nostrum sit suscipit,
-                  velit quas debitis nihil natus voluptas dolor, explicabo sed
-                  doloribus consequatur delectus voluptates vero. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Molestiae,
-                  tempora odio nam cumque modi eligendi omnis sed ea cupiditate,
-                  quisquam reiciendis quo accusamus dolores! Cum modi
-                  necessitatibus totam suscipit facilis?
+                  Először is, örök hálám és köszönetem feléd! Iszonyatosan
+                  örülök, és nagyon hálás vagyok, hogy rád találtam!!!! Tegnap
+                  megjött a mensesem, és EGYÁLTALÁN NEM FÁJT!!!! Se az előtte
+                  lévő napokban, se aznap, csak szépen finoman beindult a
+                  természetes folyamat. Ma sem fáj, csak egy picit érzem a jobb
+                  oldali petevezetéket. 1,5 év után először jól vagyok a menses
+                  alatt!!!! Szóval nagyon szépen köszönöm a segítséged!!!
                 </p>
               </div>
             </div>
