@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+.mah-75 {
+  max-height: 75vh;
+}
+
 .border-bottom {
   border-color: black !important;
 }
@@ -34,6 +38,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  margin: 0.5em 0;
 }
 
 p,
@@ -238,7 +243,7 @@ nav a.dropdown-item:hover {
   }
 
   .navbar-nav li {
-    line-height: 2.35em;
+    line-height: 2em;
   }
 
   .bottom-navbar .navbar__left li:nth-child(1):hover {
@@ -639,4 +644,90 @@ a.anchor {
 
 .faq-answer p {
   margin: 15px 0;
+}
+
+/* UNDER CONSTRUCTION PAGE */
+
+.recommendations {
+  background-color: var(--brown);
+  color: var(--black);
+  padding: 4rem 0;
+}
+
+.recommendation-card {
+  perspective: 1000px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recommendation-card:hover {
+  transform: scale(1.02);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  text-align: left;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.recommendation-card.active .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid var(--lightred06);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+}
+
+.card-front {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.card-front img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--lightred06);
+}
+
+.card-front .description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-front .description h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-front .description p {
+  margin: 0;
+  color: var(--black);
+  font-size: 0.9rem;
+}
+
+.card-back {
+  padding: 16px;
+  background-color: var(--lightred08);
+  color: var(--white);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
