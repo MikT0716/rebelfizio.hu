@@ -154,7 +154,7 @@ ul {
 
 nav .dropdown-item {
   color: var(--white);
-  white-space: wrap;
+  white-space: normal;
 }
 
 nav a.dropdown-item:hover {
