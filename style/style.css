@@ -42,13 +42,15 @@ h6 {
 }
 
 p,
-li {
+li,
+ul {
   font-family: "Open-sans", sans-serif;
 }
 
 p,
-ul {
-  font-size: calc(14px + 0.390625vw);
+ul,
+figcaption {
+  font-size: calc(13px + 0.390625vw);
 }
 
 .row i {
@@ -264,6 +266,12 @@ nav a.dropdown-item:hover {
 
 /* phone (dropdown) */
 @media (max-width: 768px) {
+  p,
+  ul,
+  figcaption {
+    font-size: calc(14px + 0.390625vw);
+  }
+
   .navbar .logo {
     display: none;
   }
@@ -324,67 +332,6 @@ nav a.dropdown-item:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-}
-
-/* .hero img {
-  width: 100%;
-} */
-
-.hero-text {
-  color: var(--red);
-  left: 2em;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-}
-
-.hero-title {
-  font-size: 1.3rem;
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  /* Small devices (576px and up) */
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-paragraph {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  /* Medium devices (768px and up) */
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero-paragraph {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 992px) {
-  /* Large devices (992px and up) */
-  .hero-title {
-    font-size: 3.5rem;
-  }
-
-  .hero-paragraph {
-    font-size: 1.3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* Extra large devices (1200px and up) */
-  .hero-title {
-    font-size: 4rem;
-  }
-
-  .hero-paragraph {
-    font-size: 1.4rem;
-  }
 }
 
 /* SPECIALITIES */
