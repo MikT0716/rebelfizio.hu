@@ -73,3 +73,16 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+const image = document.getElementById("single-image");
+const viewer = new Viewer(image, {
+  toolbar: {
+    zoomIn: 1,
+    zoomOut: 1,
+  },
+  navbar: false,
+  title: false,
+  movable: true,
+  zoomable: true,
+  scalable: true,
+});
