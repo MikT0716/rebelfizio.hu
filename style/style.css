@@ -232,11 +232,11 @@ nav a.dropdown-item:hover {
   }
 
   .navbar__left {
-    width: 55%;
+    width: 60%;
   }
 
   .navbar__right {
-    width: 45%;
+    width: 40%;
   }
 
   .navbar__left-ul,
