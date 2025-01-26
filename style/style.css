@@ -21,6 +21,7 @@
 body {
   background-color: var(--white);
   overflow-x: hidden;
+  padding-bottom: 2.5em;
 }
 
 .mah-75 {
@@ -153,6 +154,7 @@ ul {
 
 nav .dropdown-item {
   color: var(--white);
+  white-space: wrap;
 }
 
 nav a.dropdown-item:hover {
@@ -273,6 +275,7 @@ nav a.dropdown-item:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
 
   .nav-item.dropdown {
