@@ -345,9 +345,7 @@ nav a.dropdown-item:hover {
 }
 
 .specialities h1 {
-  left: 25%;
-  padding-top: 0.5em;
-  position: relative;
+  width: 50%;
 }
 
 .specialities i {
@@ -362,6 +360,12 @@ nav a.dropdown-item:hover {
 .justy {
   text-align: justify;
   text-justify: inter-word;
+}
+
+@media (max-width: 768px) {
+  .specialities h1 {
+    width: 75%;
+  }
 }
 
 /* ABOUT ME */
@@ -391,6 +395,10 @@ nav a.dropdown-item:hover {
   text-decoration: none;
 }
 
+.album h2 {
+  width: 50%;
+}
+
 .album .card {
   background: none;
   border: none;
@@ -417,10 +425,20 @@ nav a.dropdown-item:hover {
   font-size: calc(11px + 0.390625vw);
 }
 
+@media (max-width: 768px) {
+  .album h2 {
+    width: 75%;
+  }
+}
+
 /* REVIEWS */
 
 .carousel {
   background-color: var(--white);
+}
+
+.carousel h2 {
+  width: 50%;
 }
 
 .carousel-inner {
@@ -434,15 +452,21 @@ nav a.dropdown-item:hover {
   justify-content: center;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
 @media (max-width: 1200px) {
   .carousel-item i {
     font-size: 2em;
   }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 10%;
+@media (max-width: 768px) {
+  .carousel h2 {
+    width: 75%;
+  }
 }
 
 /* CONTACT */
