@@ -155,7 +155,6 @@ figcaption {
 
 nav .dropdown-item {
   color: var(--white);
-  white-space: normal;
 }
 
 nav a.dropdown-item:hover {
@@ -287,6 +286,10 @@ nav a.dropdown-item:hover {
 
   .nav-item.dropdown {
     width: 100%;
+  }
+
+  nav .dropdown-item {
+    white-space: normal;
   }
 
   .dropdown-menu {
