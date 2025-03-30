@@ -622,10 +622,11 @@ a.anchor {
   margin: 15px 0;
 }
 
-/* UNDER CONSTRUCTION PAGE */
+/* AJÁNLÁSOK */
 
 .recommendations {
   background-color: var(--brown);
+  min-height: 86vh;
   color: var(--black);
   padding: 4rem 0;
 }
@@ -706,4 +707,41 @@ a.anchor {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Skeleton base */
+.skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+/* Skeleton effect for circular elements (e.g., profile picture) */
+.skeleton-circle {
+  width: 50px; /* Adjust as needed */
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Skeleton effect for text lines */
+.skeleton-text {
+  height: 12px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Shorter text line */
+.skeleton-text.short {
+  width: 60%;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
 }
