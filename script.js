@@ -74,6 +74,34 @@ faqItems.forEach((item) => {
   });
 });
 
+const annualLeaveNoticeKey = "annual-leave-notice-seen";
+if (!sessionStorage.getItem(annualLeaveNoticeKey)) {
+  const annualLeaveModal = document.createElement("div");
+  annualLeaveModal.className = "modal fade annual-leave-modal";
+  annualLeaveModal.id = "annualLeaveModal";
+  annualLeaveModal.tabIndex = -1;
+  annualLeaveModal.setAttribute("aria-labelledby", "annualLeaveModalLabel");
+  annualLeaveModal.setAttribute("aria-hidden", "true");
+  annualLeaveModal.innerHTML = `
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="annualLeaveModalLabel">Tájékoztatás éves szabadságról</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+        </div>
+        <div class="modal-body">
+          <p>Kedves Pácienseim és Érdeklődők!</p>
+          <p>Hosszabb szabadság miatt szünetel a gyógytorna és a konzultáció Október 25-ig.</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(annualLeaveModal);
+  sessionStorage.setItem(annualLeaveNoticeKey, "seen");
+  new bootstrap.Modal(annualLeaveModal).show();
+}
+
 const image = document.getElementById("single-image");
 const viewer = new Viewer(image, {
   toolbar: {

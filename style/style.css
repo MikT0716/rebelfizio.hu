@@ -523,6 +523,21 @@ nav a.dropdown-item:hover {
   transform: scale(0.95);
 }
 
+.annual-leave-modal .modal-content {
+  border: 0;
+  border-top: 0.4rem solid var(--red);
+  border-radius: 1rem;
+  color: var(--black);
+}
+
+.annual-leave-modal .modal-header {
+  border-bottom-color: var(--brown);
+}
+
+.annual-leave-modal .modal-body p:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 600px) {
   .floating-button {
     padding: 10px 15px;
