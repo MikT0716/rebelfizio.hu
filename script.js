@@ -91,7 +91,7 @@ if (!sessionStorage.getItem(annualLeaveNoticeKey)) {
         </div>
         <div class="modal-body">
           <p>Kedves Pácienseim és Érdeklődők!</p>
-          <p>Hosszabb szabadság miatt szünetel a gyógytorna és a konzultáció Október 25-ig.</p>
+          <p>Hosszabb szabadság miatt szünetel a gyógytorna és a konzultáció Október 25-ig. Ebben az időszakban telefonon nem leszek elérhető, emailes megkeresésekre csak Október 26-án tudok válaszolni.</p>
         </div>
       </div>
     </div>
