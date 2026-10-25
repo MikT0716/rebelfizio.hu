@@ -510,7 +510,9 @@ nav a.dropdown-item:hover {
   font-size: 14px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
   z-index: 100;
 }
 
@@ -521,21 +523,6 @@ nav a.dropdown-item:hover {
 
 .floating-button:active {
   transform: scale(0.95);
-}
-
-.annual-leave-modal .modal-content {
-  border: 0;
-  border-top: 0.4rem solid var(--red);
-  border-radius: 1rem;
-  color: var(--black);
-}
-
-.annual-leave-modal .modal-header {
-  border-bottom-color: var(--brown);
-}
-
-.annual-leave-modal .modal-body p:last-child {
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
